@@ -1,0 +1,16 @@
+{
+  "name": "class14mongo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node apps.js",
+    "dev": "nodemon apps.js"
+  },
+  "author": "angelica",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.6.4"
+  }
+}
