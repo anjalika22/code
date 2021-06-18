@@ -1,0 +1,226 @@
+<!--Targets-
+Panels
+Forms
+modals
+carousel
+Bootstrap4
+new thing
+github-->
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <marquee>hi</marquee>
+    <!--PROGRESS BAR-->
+    <div class="progress">
+        <div class="progress-bar" style="width: 50%;">
+        50% completed
+        </div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-danger progress-bar-striped" style="width: 50%;">
+        50% completed
+        </div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped active" style="width: 80%;">
+        80% completed
+        </div>
+    </div>
+    <div class="container">
+        <!--1.Pop-up modals-->
+        <button type="button" class="btn btn-warning" data-target="#details" data-toggle="modal">
+            Details
+        </button>
+        <div id="details" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">About Delhi</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            छपाई और अक्षर योजन उद्योग का एक साधारण डमी पाठ है. Lorem Ipsum सन १५०० के बाद से अभी तक इस
+                            उद्योग का मानक डमी पाठ मन गया, जब एक अज्ञात मुद्रक ने नमूना लेकर एक नमूना किताब बनाई. यह न
+                            केवल
+                            पाँच सदियों से जीवित रहा बल्कि इसने इलेक्ट्रॉनिक मीडिया में छलांग लगाने
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--2.PANEL STARTS NOW-->
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                Home page
+            </div>
+            <div class="panel-body">
+                <div class="jumbotron">
+                    <h2>Home page</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                        type and
+                        scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                        leap
+                        into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                        with the
+                        release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                        publishing
+                        software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p>Lorem Ipsum छपाई और अक्षर योजन उद्योग का एक साधारण डमी पाठ है. Lorem Ipsum सन १५०० के बाद से अभी
+                        तक इस
+                        उद्योग का मानक डमी पाठ मन गया, जब एक अज्ञात मुद्रक ने नमूना लेकर एक नमूना किताब बनाई. यह न केवल
+                        पाँच
+                        सदियों से जीवित रहा बल्कि इसने इलेक्ट्रॉनिक मीडिया में छलांग लगाने के बाद भी मूलतः अपरिवर्तित
+                        रहा. यह
+                        1960 के दशक में Letraset Lorem Ipsum अंश युक्त पत्र के रिलीज के साथ लोकप्रिय हुआ, और हाल ही में
+                        Aldus
+                        PageMaker Lorem Ipsum के संस्करणों सहित तरह डेस्कटॉप प्रकाशन सॉफ्टवेयर के साथ अधिक प्रचलित हुआ.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="panel panel-danger">
+            <div class="panel-heading">
+                <h2>Form Fill</h2>
+            </div>
+            <div class="pannel-body">
+                <!--PANNEL-BODY CLASS-->
+                <form>
+                    <!--3.Form Tag-->
+
+                    <label>First name</label>
+                    <input type="input" placeholder="First name" required>
+                    <!--Placeholder class && required=complusry alert box-->
+
+                    <div class="form-group">
+                        <!-- Form-group TAG-->
+                        <label>Last name</label>
+                        <input type="input" placeholder="Last name" value="Try" class="form-control">
+                        <!--form-control class-->
+                        <!--both these are Inline tags so use DIV Tag to make vertical-->
+                    </div>
+                    <div class="form-group">
+                        <!-- here input type=  "hidden" type-->
+                        <label>official code</label>
+                        <input type="text" value="Try" class="form-control" readonly />
+                        <!--Readonly form-control class-->
+                        <!--Used for backend team-->
+                    </div>
+                    <div class="form-group">
+                        <label>Age</label>
+                        <input type="date" placeholder="age" class="form-control" />
+                    </div>
+
+                </form>
+            </div>
+
+
+            <!--NEXT TO EACH OTHER -->
+            <div class="row">
+                <!--row CLASS-->
+                <form>
+                    <!--Form Tag-->
+                    <div class="form-group col-md-6">
+                        <!-- Col-mid-6 to come next to eachother-->
+                        <label>Email id</label>
+                        <input type="email" placeholder="Email id" value="Try" class="form-control">
+                        <!--input type="emal" otherwise alert box pops up-->
+                    </div>
+                    <div class="form-group col-md-6">
+                        <!-- Form-group TAG-->
+                        <label>Password</label>
+                        <input type="input" placeholder="Password" value="Try" class="form-control">
+                        <!--form-control class-->
+                        <!--both these are Inline tags so use DIV Tag to make vertical-->
+                    </div>
+
+                    
+
+                    <!--4.Buttons-->
+                    <div class="form-group col-md-6">
+                        <button type="submit" class="btn btn-primay">Submit</button>
+                        <!--give type=submit- it will submit the form-->
+                        <input type="reset" class="btn btn-danger" value="Rest" />
+                        <!--With input tag use alwys VALUE elemnt-->
+                    </div>
+                    <!--Radio button only one is selected at time->use name=gender-->
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="gender" />Female
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" />Male
+                        </label>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+        <!--5.IMAGE CAROUSEL into 3 parts-->
+        <div id="imagecar" class="carousel slide" data-ride="carousel">
+            <!--a.3 dots icon-->
+            <ol class="carousel-indicators">
+            <li data-target="#imagecar" data-slide-to="0"></li>
+            <li data-target="#imagecar" data-slide-to="1"></li>
+            <li data-target="#imagecar" data-slide-to="2"></li>
+        </ol>
+            <!--b.IMAGE INSERTION-->
+            <div class="carousel-inner">
+                <div class="item-active">
+                    <img src="download.jpg">
+                </div>
+                <div class="item">
+                    <img src="images (1).jpg">
+                </div>
+                <div class="item">
+                    <img src="images.jpg">
+                </div>
+            </div>
+            <!--c.Anchor Tag for Left &Right-->
+            <a class="left carousel-control" href="#imagecar" data-slide="prev"><!--DATA SIDE for moving imgs in slide -->
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#imagecar" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
+<div id="imageGallery" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#imageGallery" data-slide-to="0"></li>
+        <li data-target="#imageGallery" data-slide-to="1"></li>
+        <li data-target="#imageGallery" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="https://i.ibb.co/pv8Kf4m/roseate.jpg">
+        </div>
+        <div class="item">
+            <img src="https://i.ibb.co/W0z1JCF/tajmahal.jpg">
+        </div>
+        <div class="item">
+            <img src="https://i.ibb.co/QD1RRBk/piccadily.jpg">
+        </div>
+    </div>
+    <a class="left carousel-control" href="#imageGallery" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#imageGallery" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div>
